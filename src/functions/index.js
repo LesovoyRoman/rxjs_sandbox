@@ -1,6 +1,6 @@
-import { observeArray, addListener } from './rx'
+import { addObserver, addListener } from './rx'
 
 export default class CustomFunctions {
-    static rxObserveArray = (elements) => observeArray(elements)
+    static rxObserveArray = (observer) => addObserver(observer)
     static rxAddListener = (element, event) => addListener(element, event);
 }
